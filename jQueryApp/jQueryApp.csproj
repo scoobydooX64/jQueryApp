@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62FF41ED-DAF5-45EB-993F-D41BAC9B95A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jQueryApp</RootNamespace>
+    <AssemblyName>jQueryApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="js\vendor\highlight\LICENSE" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="favicon.png" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\coded-homes-logo-sm.png" />
+    <Content Include="img\coded-homes-logo.png" />
+    <Content Include="img\demo.png" />
+    <Content Include="img\Fotolia_52213146_M.jpg" />
+    <Content Include="img\hello-world.png" />
+    <Content Include="img\house.png" />
+    <Content Include="img\jquery-ecosystem.png" />
+    <Content Include="img\jquery-ui.png" />
+    <Content Include="img\jquery.png" />
+    <Content Include="img\resources.png" />
+    <Content Include="index.html" />
+    <Content Include="js\app\utils.js" />
+    <Content Include="js\vendor\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
+    <Content Include="js\vendor\highlight\highlight.pack.js" />
+    <Content Include="js\vendor\jquery-1.11.2.js" />
+    <Content Include="js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="js\vendor\npm.js" />
+    <Content Include="js\vendor\styles\arta.css" />
+    <Content Include="js\vendor\styles\ascetic.css" />
+    <Content Include="js\vendor\styles\atelier-dune.dark.css" />
+    <Content Include="js\vendor\styles\atelier-dune.light.css" />
+    <Content Include="js\vendor\styles\atelier-forest.dark.css" />
+    <Content Include="js\vendor\styles\atelier-forest.light.css" />
+    <Content Include="js\vendor\styles\atelier-heath.dark.css" />
+    <Content Include="js\vendor\styles\atelier-heath.light.css" />
+    <Content Include="js\vendor\styles\atelier-lakeside.dark.css" />
+    <Content Include="js\vendor\styles\atelier-lakeside.light.css" />
+    <Content Include="js\vendor\styles\atelier-seaside.dark.css" />
+    <Content Include="js\vendor\styles\atelier-seaside.light.css" />
+    <Content Include="js\vendor\styles\brown_paper.css" />
+    <Content Include="js\vendor\styles\brown_papersq.png" />
+    <Content Include="js\vendor\styles\codepen-embed.css" />
+    <Content Include="js\vendor\styles\color-brewer.css" />
+    <Content Include="js\vendor\styles\dark.css" />
+    <Content Include="js\vendor\styles\default.css" />
+    <Content Include="js\vendor\styles\docco.css" />
+    <Content Include="js\vendor\styles\far.css" />
+    <Content Include="js\vendor\styles\foundation.css" />
+    <Content Include="js\vendor\styles\github.css" />
+    <Content Include="js\vendor\styles\googlecode.css" />
+    <Content Include="js\vendor\styles\hybrid.css" />
+    <Content Include="js\vendor\styles\idea.css" />
+    <Content Include="js\vendor\styles\ir_black.css" />
+    <Content Include="js\vendor\styles\kimbie.dark.css" />
+    <Content Include="js\vendor\styles\kimbie.light.css" />
+    <Content Include="js\vendor\styles\magula.css" />
+    <Content Include="js\vendor\styles\mono-blue.css" />
+    <Content Include="js\vendor\styles\monokai.css" />
+    <Content Include="js\vendor\styles\monokai_sublime.css" />
+    <Content Include="js\vendor\styles\obsidian.css" />
+    <Content Include="js\vendor\styles\paraiso.dark.css" />
+    <Content Include="js\vendor\styles\paraiso.light.css" />
+    <Content Include="js\vendor\styles\pojoaque.css" />
+    <Content Include="js\vendor\styles\pojoaque.jpg" />
+    <Content Include="js\vendor\styles\railscasts.css" />
+    <Content Include="js\vendor\styles\rainbow.css" />
+    <Content Include="js\vendor\styles\school_book.css" />
+    <Content Include="js\vendor\styles\school_book.png" />
+    <Content Include="js\vendor\styles\solarized_dark.css" />
+    <Content Include="js\vendor\styles\solarized_light.css" />
+    <Content Include="js\vendor\styles\sunburst.css" />
+    <Content Include="js\vendor\styles\tomorrow-night-blue.css" />
+    <Content Include="js\vendor\styles\tomorrow-night-bright.css" />
+    <Content Include="js\vendor\styles\tomorrow-night-eighties.css" />
+    <Content Include="js\vendor\styles\tomorrow-night.css" />
+    <Content Include="js\vendor\styles\tomorrow.css" />
+    <Content Include="js\vendor\styles\vs.css" />
+    <Content Include="js\vendor\styles\xcode.css" />
+    <Content Include="js\vendor\styles\zenburn.css" />
+    <Content Include="pages\example-page.html" />
+    <Content Include="pages\hello-world.html" />
+    <Content Include="pages\resources.html" />
+    <Content Include="styles.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52066</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52066/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
